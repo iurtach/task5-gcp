@@ -1,0 +1,17 @@
+# See https://cloud.google.com/appengine/docs/standard/php/config/appref for a
+# complete list of `app.yaml` directives.
+
+runtime: php82
+
+runtime_config:
+  document_root: web
+  enable_stackdriver_integration: true
+
+env_variables:
+    GOOGLE_STORAGE_BUCKET: "task5-php"
+    # populate these to use the "mysql" or "postres" backends
+    # CLOUDSQL_CONNECTION_NAME: "prod-401919:europe-west1:sql-instance-task5"
+    # CLOUDSQL_USER: "user"
+    # CLOUDSQL_PASSWORD: "user"
+    ## Uncomment to give your database a name other than "bookshelf"
+    CLOUDSQL_DATABASE_NAME: "task5_1"

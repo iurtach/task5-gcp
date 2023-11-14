@@ -1,0 +1,5 @@
+cron:
+- description: job
+  # url: /killer.php
+  url: /cron.php
+  schedule: every 240 mins
